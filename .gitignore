@@ -1,0 +1,42 @@
+# Environments & Secrets
+.env
+.env.*
+*.key
+*.pem
+*.cert
+*.pfx
+
+# Python & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Databases & Runtime State
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Logs & Temp files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+

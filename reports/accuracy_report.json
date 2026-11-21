@@ -1,0 +1,604 @@
+{
+  "dataset_size": 48,
+  "format_detection": {
+    "accuracy": 100.0,
+    "confusion_matrix": {
+      "tn_board": {
+        "tn_board": 32,
+        "cbse": 0,
+        "anna_univ": 0,
+        "unrecognized": 0
+      },
+      "cbse": {
+        "tn_board": 0,
+        "cbse": 16,
+        "anna_univ": 0,
+        "unrecognized": 0
+      },
+      "anna_univ": {
+        "tn_board": 0,
+        "cbse": 0,
+        "anna_univ": 0,
+        "unrecognized": 0
+      },
+      "unrecognized": {
+        "tn_board": 0,
+        "cbse": 0,
+        "anna_univ": 0,
+        "unrecognized": 0
+      }
+    }
+  },
+  "field_extraction_accuracy": {
+    "tn_board": 85.29,
+    "cbse": 85.16,
+    "anna_univ": 0.0
+  },
+  "mismatch_detection": {
+    "precision": 91.3,
+    "recall": 100.0,
+    "f1_score": 95.45,
+    "overall_accuracy": 91.67,
+    "confusion_matrix": {
+      "TP": 42,
+      "FP": 4,
+      "TN": 2,
+      "FN": 0
+    }
+  },
+  "photo_evaluation": {
+    "accuracy": 87.5,
+    "confusion_matrix": {
+      "PASS": {
+        "PASS": 24,
+        "FAIL": 0,
+        "REVIEW": 0
+      },
+      "FAIL": {
+        "PASS": 0,
+        "FAIL": 18,
+        "REVIEW": 6
+      },
+      "REVIEW": {
+        "PASS": 0,
+        "FAIL": 0,
+        "REVIEW": 0
+      }
+    }
+  },
+  "performance": {
+    "total_time_seconds": 152.48,
+    "average_time_per_application_seconds": 3.177,
+    "throughput_applications_per_minute": 18.9
+  },
+  "detailed_results": [
+    {
+      "application_id": "APP-TN-001",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "PASS",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "NONE",
+      "processing_time_ms": 7177.6
+    },
+    {
+      "application_id": "APP-TN-002",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MARK_MISMATCH",
+      "processing_time_ms": 3820.9
+    },
+    {
+      "application_id": "APP-TN-003",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MISSING_SUBJECT",
+      "processing_time_ms": 3889.0
+    },
+    {
+      "application_id": "APP-TN-004",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "SWAPPED_DIGITS",
+      "processing_time_ms": 3868.3
+    },
+    {
+      "application_id": "APP-TN-005",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "PASS",
+      "marksheet_verdict": "PASS",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "NONE",
+      "processing_time_ms": 2956.9
+    },
+    {
+      "application_id": "APP-TN-006",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MARK_MISMATCH",
+      "processing_time_ms": 3869.3
+    },
+    {
+      "application_id": "APP-TN-007",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MISSING_SUBJECT",
+      "processing_time_ms": 3764.2
+    },
+    {
+      "application_id": "APP-TN-008",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "SWAPPED_DIGITS",
+      "processing_time_ms": 3875.6
+    },
+    {
+      "application_id": "APP-TN-009",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_LOW_RES",
+      "processing_time_ms": 3883.5
+    },
+    {
+      "application_id": "APP-TN-010",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "PASS",
+      "photo_verdict": "REVIEW",
+      "injected_anomaly": "PHOTO_BLUR",
+      "processing_time_ms": 3967.6
+    },
+    {
+      "application_id": "APP-TN-011",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_TOO_DARK",
+      "processing_time_ms": 3973.3
+    },
+    {
+      "application_id": "APP-TN-012",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_TOO_BRIGHT",
+      "processing_time_ms": 3807.1
+    },
+    {
+      "application_id": "APP-TN-013",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_LANDSCAPE",
+      "processing_time_ms": 3917.9
+    },
+    {
+      "application_id": "APP-TN-014",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "PASS",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_NO_FACE",
+      "processing_time_ms": 3942.1
+    },
+    {
+      "application_id": "APP-TN-015",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_WRONG_FORMAT",
+      "processing_time_ms": 3827.0
+    },
+    {
+      "application_id": "APP-TN-016",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "REVIEW",
+      "injected_anomaly": "PHOTO_WRONG_ASPECT",
+      "processing_time_ms": 3819.1
+    },
+    {
+      "application_id": "APP-TN-017",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "PASS",
+      "marksheet_verdict": "PASS",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "NONE",
+      "processing_time_ms": 3729.4
+    },
+    {
+      "application_id": "APP-TN-018",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MARK_MISMATCH",
+      "processing_time_ms": 3037.2
+    },
+    {
+      "application_id": "APP-TN-019",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MISSING_SUBJECT",
+      "processing_time_ms": 2743.3
+    },
+    {
+      "application_id": "APP-TN-020",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "SWAPPED_DIGITS",
+      "processing_time_ms": 2793.8
+    },
+    {
+      "application_id": "APP-TN-021",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "PASS",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "NONE",
+      "processing_time_ms": 2909.9
+    },
+    {
+      "application_id": "APP-TN-022",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MARK_MISMATCH",
+      "processing_time_ms": 2703.1
+    },
+    {
+      "application_id": "APP-TN-023",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MISSING_SUBJECT",
+      "processing_time_ms": 2725.9
+    },
+    {
+      "application_id": "APP-TN-024",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "SWAPPED_DIGITS",
+      "processing_time_ms": 2842.1
+    },
+    {
+      "application_id": "APP-TN-025",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_LOW_RES",
+      "processing_time_ms": 2758.5
+    },
+    {
+      "application_id": "APP-TN-026",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "REVIEW",
+      "injected_anomaly": "PHOTO_BLUR",
+      "processing_time_ms": 2803.0
+    },
+    {
+      "application_id": "APP-TN-027",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_TOO_DARK",
+      "processing_time_ms": 2609.3
+    },
+    {
+      "application_id": "APP-TN-028",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_TOO_BRIGHT",
+      "processing_time_ms": 2855.3
+    },
+    {
+      "application_id": "APP-TN-029",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "PASS",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_LANDSCAPE",
+      "processing_time_ms": 2789.8
+    },
+    {
+      "application_id": "APP-TN-030",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_NO_FACE",
+      "processing_time_ms": 2754.5
+    },
+    {
+      "application_id": "APP-TN-031",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_WRONG_FORMAT",
+      "processing_time_ms": 2728.3
+    },
+    {
+      "application_id": "APP-TN-032",
+      "expected_format": "tn_board",
+      "detected_format": "tn_board",
+      "format_confidence": 0.98,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "REVIEW",
+      "injected_anomaly": "PHOTO_WRONG_ASPECT",
+      "processing_time_ms": 2751.7
+    },
+    {
+      "application_id": "APP-CBSE-033",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "PASS",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "NONE",
+      "processing_time_ms": 2709.4
+    },
+    {
+      "application_id": "APP-CBSE-034",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MARK_MISMATCH",
+      "processing_time_ms": 2565.6
+    },
+    {
+      "application_id": "APP-CBSE-035",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "NAME_MISMATCH",
+      "processing_time_ms": 2648.5
+    },
+    {
+      "application_id": "APP-CBSE-036",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "SWAPPED_DIGITS",
+      "processing_time_ms": 2700.5
+    },
+    {
+      "application_id": "APP-CBSE-037",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "PASS",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "NONE",
+      "processing_time_ms": 2733.4
+    },
+    {
+      "application_id": "APP-CBSE-038",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "MARK_MISMATCH",
+      "processing_time_ms": 2643.2
+    },
+    {
+      "application_id": "APP-CBSE-039",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "NAME_MISMATCH",
+      "processing_time_ms": 2632.2
+    },
+    {
+      "application_id": "APP-CBSE-040",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "PASS",
+      "injected_anomaly": "SWAPPED_DIGITS",
+      "processing_time_ms": 2674.7
+    },
+    {
+      "application_id": "APP-CBSE-041",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_LOW_RES",
+      "processing_time_ms": 2681.5
+    },
+    {
+      "application_id": "APP-CBSE-042",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "REVIEW",
+      "injected_anomaly": "PHOTO_BLUR",
+      "processing_time_ms": 2670.3
+    },
+    {
+      "application_id": "APP-CBSE-043",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_TOO_DARK",
+      "processing_time_ms": 2670.3
+    },
+    {
+      "application_id": "APP-CBSE-044",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_TOO_BRIGHT",
+      "processing_time_ms": 2543.6
+    },
+    {
+      "application_id": "APP-CBSE-045",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "PASS",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_LANDSCAPE",
+      "processing_time_ms": 2635.5
+    },
+    {
+      "application_id": "APP-CBSE-046",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "REVIEW",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_NO_FACE",
+      "processing_time_ms": 2669.2
+    },
+    {
+      "application_id": "APP-CBSE-047",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "FAIL",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "FAIL",
+      "injected_anomaly": "PHOTO_WRONG_FORMAT",
+      "processing_time_ms": 2707.6
+    },
+    {
+      "application_id": "APP-CBSE-048",
+      "expected_format": "cbse",
+      "detected_format": "cbse",
+      "format_confidence": 0.9,
+      "expected_verdict": "REVIEW",
+      "marksheet_verdict": "FAIL",
+      "photo_verdict": "REVIEW",
+      "injected_anomaly": "PHOTO_WRONG_ASPECT",
+      "processing_time_ms": 2703.5
+    }
+  ]
+}

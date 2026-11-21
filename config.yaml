@@ -1,0 +1,140 @@
+tesseract:
+  fallback_cmd: "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  psm_primary: 6
+  psm_secondary: 4
+
+photo_validation:
+  allowed_formats:
+    - "JPEG"
+    - "PNG"
+  min_size_kb: 10
+  max_size_kb: 5120
+  min_width: 300
+  min_height: 400
+  max_width: 4000
+  max_height: 5000
+  target_aspect_ratio: 0.75  # 3:4 (w/h)
+  aspect_ratio_tolerance: 0.15
+  min_brightness: 50.0
+  max_brightness: 205.0
+  min_contrast: 28.0
+  min_sharpness_laplacian: 60.0
+  max_overexposed_pct: 12.0
+  max_underexposed_pct: 12.0
+  face_detection:
+    min_face_pct: 0.06
+    max_face_pct: 0.75
+    center_tolerance_x: 0.35
+    center_tolerance_y: 0.35
+
+formats:
+  tn_board:
+    id: "tn_board"
+    name: "Tamil Nadu State Board"
+    keywords:
+      - "GOVERNMENT OF TAMIL NADU"
+      - "DIRECTORATE OF GOVERNMENT EXAMINATIONS"
+      - "SSLC"
+      - "HIGHER SECONDARY"
+      - "STATE BOARD"
+      - "TAMIL NADU"
+      - "DEPARTMENT OF SCHOOL EDUCATION"
+    required_subjects_sslc:
+      - "Tamil"
+      - "English"
+      - "Mathematics"
+      - "Science"
+      - "Social Science"
+    required_subjects_hsc:
+      - "Tamil"
+      - "English"
+      - "Physics"
+      - "Chemistry"
+      - "Mathematics"
+      - "Biology"
+    subject_aliases:
+      "Tamil": ["tamil", "language", "part i tamil"]
+      "English": ["english", "general english", "part ii english"]
+      "Mathematics": ["mathematics", "maths", "general mathematics"]
+      "Science": ["science", "general science", "science theory"]
+      "Social Science": ["social science", "social sci", "social", "soc sci"]
+      "Physics": ["physics", "phy"]
+      "Chemistry": ["chemistry", "chem"]
+      "Biology": ["biology", "bio"]
+      "Computer Science": ["computer science", "computer sci", "cs", "comp sci"]
+    max_marks: 100
+    pass_mark: 35
+
+  cbse:
+    id: "cbse"
+    name: "Central Board of Secondary Education (CBSE)"
+    keywords:
+      - "CENTRAL BOARD OF SECONDARY EDUCATION"
+      - "CBSE"
+      - "SECONDARY SCHOOL EXAMINATION"
+      - "SENIOR SCHOOL CERTIFICATE"
+      - "DELHI"
+    required_subjects_class10:
+      - "Mathematics"
+      - "Science"
+      - "Social Science"
+      - "English Language & Literature"
+      - "Hindi Course-B"
+    required_subjects_class12:
+      - "English Core"
+      - "Mathematics"
+      - "Physics"
+      - "Chemistry"
+      - "Computer Science"
+    subject_aliases:
+      "Mathematics": ["mathematics", "maths", "041", "standard mathematics", "maths standard"]
+      "Science": ["science", "086", "science theory"]
+      "Social Science": ["social science", "social sci", "087", "soc sci"]
+      "English Language & Literature": ["english language & literature", "english lang & lit", "184", "english"]
+      "Hindi Course-B": ["hindi course-b", "hindi", "085"]
+      "English Core": ["english core", "301"]
+      "Physics": ["physics", "042"]
+      "Chemistry": ["chemistry", "043"]
+      "Computer Science": ["computer science", "083", "comp sci"]
+      "Biology": ["biology", "044"]
+    max_marks: 100
+    pass_mark: 33
+
+  anna_univ:
+    id: "anna_univ"
+    name: "Anna University"
+    keywords:
+      - "ANNA UNIVERSITY"
+      - "SEMESTER"
+      - "GRADE SHEET"
+      - "COURSE CODE"
+      - "GPA"
+      - "CGPA"
+      - "REGULATION"
+      - "CHENNAI"
+    grade_points:
+      "O": 10
+      "A+": 9
+      "A": 8
+      "B+": 7
+      "B": 6
+      "C": 5
+      "U": 0
+      "RA": 0
+      "W": 0
+      "SA": 0
+    grade_aliases:
+      "At": "A+"
+      "A*": "A+"
+      "0": "O"
+      "o": "O"
+      "Bt": "B+"
+      "B*": "B+"
+      "U ": "U"
+      "RA ": "RA"
+    arrear_grades:
+      - "U"
+      - "RA"
+      - "W"
+      - "SA"
+
