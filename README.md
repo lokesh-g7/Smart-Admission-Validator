@@ -126,6 +126,16 @@ streamlit run app.py
 
 ---
 
+### Deploy to Streamlit Community Cloud
+
+This project is a Streamlit app; deploy it with Streamlit Community Cloud rather than a Python serverless host such as Vercel.
+
+1. Push the repository to GitHub.
+2. In [Streamlit Community Cloud](https://share.streamlit.io/), choose **Create app** and connect the GitHub repository.
+3. Select the `main` branch and set the app file path to `app.py` (repository root), then deploy.
+
+Cloud installs Python dependencies from `requirements.txt` and system packages from `packages.txt`. The latter installs Tesseract OCR for mark-sheet validation.
+
 ## 🔍 Tesseract OCR Auto-Detection Hierarchy
 
 On Windows, the application auto-detects Tesseract in this strict order:
